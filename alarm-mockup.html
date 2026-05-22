@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Alarm Mockup</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to bottom, #0a0e2a 0%, #1a1040 30%, #4a2520 60%, #c46a20 85%, #d48030 100%);
+    color: white;
+    overflow: hidden;
+  }
+
+  .phone-frame {
+    width: 390px;
+    height: 844px;
+    border-radius: 44px;
+    background: linear-gradient(to bottom, #0a0e2a 0%, #1a1040 30%, #4a2520 60%, #c46a20 85%, #d48030 100%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 80px 30px 60px;
+    position: relative;
+    box-shadow: 0 0 60px rgba(0,0,0,0.5);
+    overflow: hidden;
+  }
+
+  .top-section {
+    text-align: center;
+  }
+
+  .time {
+    font-size: 96px;
+    font-weight: 700;
+    letter-spacing: -2px;
+    line-height: 1;
+  }
+
+  .date {
+    font-size: 20px;
+    color: rgba(255, 255, 255, 0.6);
+    margin-top: 8px;
+    font-weight: 400;
+  }
+
+  .middle-section {
+    text-align: center;
+  }
+
+  .alarm-label {
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 24px;
+  }
+
+  .snooze-btn {
+    display: inline-block;
+    background: #ff5c47;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    padding: 16px 48px;
+    font-size: 20px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: transform 0.15s, opacity 0.15s;
+  }
+
+  .snooze-btn:hover {
+    transform: scale(1.03);
+    opacity: 0.9;
+  }
+
+  .snooze-btn:active {
+    transform: scale(0.97);
+  }
+
+  .bottom-section {
+    text-align: center;
+  }
+
+  .stop-btn {
+    display: inline-block;
+    background: rgba(255, 255, 255, 0.9);
+    color: #1a1a1a;
+    border: none;
+    border-radius: 30px;
+    padding: 16px 56px;
+    font-size: 20px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: transform 0.15s, opacity 0.15s;
+  }
+
+  .stop-btn:hover {
+    transform: scale(1.03);
+    background: white;
+  }
+
+  .stop-btn:active {
+    transform: scale(0.97);
+  }
+</style>
+</head>
+<body>
+  <div class="phone-frame">
+    <div class="top-section">
+      <div class="time">09:59</div>
+      <div class="date">пятница, 15 мая</div>
+    </div>
+
+    <div class="middle-section">
+      <div class="alarm-label">мазик, пироги и диски</div>
+      <button class="snooze-btn">Отложить на 5 минут</button>
+    </div>
+
+    <div class="bottom-section">
+      <button class="stop-btn">Остановить</button>
+    </div>
+  </div>
+</body>
+</html>
